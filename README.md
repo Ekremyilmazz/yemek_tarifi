@@ -1,5 +1,5 @@
 # Lezzet Defteri | Yemek Tarifleri Platformu
-Lezzet Defteri, kullanıcıların yemek tarfilerini paylaşabildiğive keşfedebildiği modern bir web platformudur
+Lezzet Defteri, kullanıcıların yemek tarfilerini toplulukla paylaşabildiği ve keşfedebildiği modern bir web platformudur.
 
 ## 🚀 Özellikler
 - Tarif ekleme, düzenleme ve silme
@@ -82,7 +82,7 @@ Lezzet Defteri, kullanıcıların yemek tarfilerini paylaşabildiğive keşfedeb
 ### Tarifler sayfası (filtreleme, arama çubuğu ve tarif detaylarını görüntüle
 - filtreleme ![Image](https://github.com/user-attachments/assets/569f2058-ab94-493c-ac04-ae5166c9aa58)
 - arama çubuğu ![Image](https://github.com/user-attachments/assets/4c415367-efdf-4671-a648-7f82254e50b2)
-- tarif detyları ![image](https://github.com/user-attachments/assets/87c8a843-c55f-466c-82ec-d7e4ab997977)
+- tarif detayları ![image](https://github.com/user-attachments/assets/87c8a843-c55f-466c-82ec-d7e4ab997977)
 
 ### Tarif ekleme formu
 - ![Image](https://github.com/user-attachments/assets/e4865d1b-fb6a-45ab-aa76-8d47979f0e0f)
