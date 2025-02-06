@@ -86,6 +86,6 @@ Lezzet Defteri, kullanıcıların yemek tarfilerini toplulukla paylaşabildiği 
 
 ### Tarif ekleme formu
 
-- Tarif1 ![Image](https://github.com/user-attachments/assets/e4865d1b-fb6a-45ab-aa76-8d47979f0e0f)
-- Tarif2 ![Image](https://github.com/user-attachments/assets/ebf9459c-1b07-45e7-8ec9-3f21b230353c)
+- 1.kısım ![Image](https://github.com/user-attachments/assets/e4865d1b-fb6a-45ab-aa76-8d47979f0e0f)
+- 2.kısım ![Image](https://github.com/user-attachments/assets/ebf9459c-1b07-45e7-8ec9-3f21b230353c)
 
