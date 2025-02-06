@@ -78,3 +78,8 @@ Lezzet Defteri, kullanıcıların yemek tarfilerini paylaşabildiğive keşfedeb
 
 ### Anasayfa
 ![Image](https://github.com/user-attachments/assets/26f04889-6bd1-4577-aee2-9cacb685771a)
+
+### Tarifler sayfası (filtreleme ve tarif detaylarını görüntüle?
+- filtreleme ![Image](https://github.com/user-attachments/assets/073cec80-0542-488c-b68e-fe86194362c2)
+- tarif detyları ![image](https://github.com/user-attachments/assets/87c8a843-c55f-466c-82ec-d7e4ab997977)
+
