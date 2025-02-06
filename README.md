@@ -2,33 +2,33 @@
 Lezzet Defteri, kullanıcıların yemek tarfilerini paylaşabildiğive keşfedebildiği modern bir web platformudur
 
 ## 🚀 Özellikler
--Tarif ekleme, düzenleme ve silme
--Kategori bazlı tarif filtreleme
--Arama fonksiyonu
--Responsive tasarım
--Tarif eklerken, tarifle beraber resim yükleme desteği
--Gerçek zamanlı bildirimler
+- Tarif ekleme, düzenleme ve silme
+- Kategori bazlı tarif filtreleme
+- Arama fonksiyonu
+- Responsive tasarım
+- Tarif eklerken, tarifle beraber resim yükleme desteği
+- Gerçek zamanlı bildirimler
 
 ## 🛠 Teknolojiler
 
 ### Frontend (client)
--React.js
--React Router DOM
--Axios
--Framer Motion (Animasyonlu geçişler)
--Tailwind CSS
--React Tostify (Gerçek zamanlı bildirimler)
+- React.js
+- React Router DOM
+- Axios
+- Framer Motion (Animasyonlu geçişler)
+- Tailwind CSS
+- React Tostify (Gerçek zamanlı bildirimler)
 
 ### Backend
--Node.js
--Express.js
--MongoDB
--Mongoose
--CORS
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- CORS
 
 ### DevOps
--Docker
--Docker Compose
+- Docker
+- Docker Compose
 
 ## 💻 Kurulum
 
