@@ -22,7 +22,7 @@ Lezzet Defteri, kullanıcıların yemek tarfilerini paylaşabildiğive keşfedeb
 ### Backend
 - Node.js
 - Express.js
-- MongoDB
+- MongoDB Atlas
 - Mongoose
 - CORS
 
