@@ -73,3 +73,8 @@ Lezzet Defteri, kullanıcıların yemek tarfilerini paylaşabildiğive keşfedeb
 ### Backend (.env)
 - MONGODB_URI=your_mongodb_uri
 - PORT=5000
+
+## 📱 Ekran görüntüleri
+
+### Anasayfa
+![Image](https://github.com/user-attachments/assets/26f04889-6bd1-4577-aee2-9cacb685771a)
