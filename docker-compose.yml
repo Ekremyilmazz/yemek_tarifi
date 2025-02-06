@@ -17,5 +17,5 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - MONGODB_URI=mongodb+srv://ekremmyillmaz:z9yM3jhG7htcI7ba@recipe-app.g5mv8.mongodb.net/?retryWrites=true&w=majority&appName=recipe-app
+      - MONGODB_URI=your_mongo_urı
       - PORT=5000
