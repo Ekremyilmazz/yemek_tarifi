@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { recipeApi } from '../services/api';
 
 const AddRecipeForm = () => {
@@ -16,15 +17,6 @@ const AddRecipeForm = () => {
     image: null
   });
 
-  const categories = [
-    { value: '', label: 'Kategori Seçin' },
-    { value: 'kahvalti', label: 'Kahvaltı' },
-    { value: 'corba', label: 'Çorba' },
-    { value: 'ana-yemek', label: 'Ana Yemek' },
-    { value: 'tatli', label: 'Tatlı' },
-    { value: 'salata', label: 'Salata' }
-  ];
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -37,25 +29,16 @@ const AddRecipeForm = () => {
         cookingTime: parseInt(formData.cookingTime)
       };
 
-      const response = await fetch('http://localhost:5000/api/recipes', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(recipeData)
-      });
-
-      if (!response.ok) {
-        throw new Error('Tarif eklenirken bir hata oluştu');
-      }
-
-      alert('Tarif başarıyla eklendi!');
+      await recipeApi.createRecipe(recipeData);
+      toast.success('Tarif başarıyla eklendi!');
       navigate('/tarifler');
+
     } catch (error) {
       console.error('Hata:', error);
-      alert('Tarif eklenirken bir hata oluştu');
+      toast.error('Tarif eklenirken bir hata oluştu');
     }
   };
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -190,7 +173,7 @@ const AddRecipeForm = () => {
                   onChange={handleChange}
                   rows="6"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                  placeholder="Hazırlanış adımlarını detaylı bir şekilde yazın"
+                  placeholder="Hazırlanış adımlarını alt alta madddeler şeklinde (1. 2. 3.) detaylı bir şekilde yazın"
                   required
                 />
               </div>

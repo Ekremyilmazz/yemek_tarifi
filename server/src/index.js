@@ -2,9 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const recipeRoutes = require('./routes/recipeRoutes');
 
 dotenv.config();
+
+const recipeRoutes = require('./routes/recipeRoutes');
 
 const app = express();
 
@@ -28,11 +29,6 @@ const connectDB = async () => {
   }
 };
 
-// Sadece kritik bağlantı hataları için listener
-mongoose.connection.on('error', (err) => {
-  console.error('MongoDB bağlantı hatası:', err.message);
-  process.exit(1);
-});
 
 connectDB().catch(console.error);
 

@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import axios from 'axios';
+import { recipeApi } from '../services/api';
 
 const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
 
-  // Kategorileri tanımlayalım
+  // Yemek kategorileri
   const categories = [
     { id: 'kahvalti', name: 'Kahvaltı' },
     { id: 'ana-yemek', name: 'Ana Yemek' },
@@ -20,12 +20,8 @@ const RecipeList = () => {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/recipes');
-        if (!response.ok) {
-          throw new Error('Tarifler yüklenirken bir hata oluştu');
-        }
-        const data = await response.json();
-        setRecipes(data);
+        const recipes = await recipeApi.getAllRecipes();
+        setRecipes(recipes.data);
       } catch (error) {
         console.error('Tarifler yüklenirken hata:', error);
       }
@@ -74,13 +70,15 @@ const RecipeList = () => {
           <div className="relative">
             <input
               type="text"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Tarif ara..."
               className="w-full px-4 py-3 rounded-lg"
             />
           </div>
         </div>
 
-        {/* Tarifler Grid */}
+        {/* Tarifler Grid Yapısı*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4">
           {filteredRecipes.map((recipe, index) => (
             <motion.div 

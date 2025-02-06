@@ -1,6 +1,12 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
+const linkStyle = "text-amber-700 hover:text-amber-500";
+const FooterSection = ({title, children}) => (
+  <div>
+    <h4 className="font-semibold text-amber-800 mb-4">{title}</h4>
+    <ul className="space-y-2">{children}</ul>
+  </div>
+);
 const Footer = () => {
   return (
     <footer className="relative z-10 bg-gradient-to-b from-amber-50 to-orange-100 backdrop-blur-md">
@@ -15,35 +21,26 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Menü */}
-          <div>
-            <h4 className="font-semibold text-amber-800 mb-4">Menü</h4>
-            <ul className="space-y-2">
-              <li><Link to="/" className="text-amber-700 hover:text-amber-500">Ana Sayfa</Link></li>
-              <li><Link to="/tarifler" className="text-amber-700 hover:text-amber-500">Tarifler</Link></li>
-              <li><Link to="/tarif-ekle" className="text-amber-700 hover:text-amber-500">Tarif Ekle</Link></li>
-            </ul>
-          </div>
+          <FooterSection title="Menü">
+              <li><Link to="/" className={linkStyle}>Ana Sayfa</Link></li>
+              <li><Link to="/tarifler" className={linkStyle}>Tarifler</Link></li>
+              <li><Link to="/tarif-ekle" className={linkStyle}>Tarif Ekle</Link></li>
+          </FooterSection>
 
           {/* Kategoriler */}
-          <div>
-            <h4 className="font-semibold text-amber-800 mb-4">Kategoriler</h4>
-            <ul className="space-y-2">
-              <li><Link to="/tarifler?category=kahvalti" className="text-amber-700 hover:text-amber-500">Kahvaltı</Link></li>
-              <li><Link to="/tarifler?category=ana-yemek" className="text-amber-700 hover:text-amber-500">Ana Yemekler</Link></li>
-              <li><Link to="/tarifler?category=corba" className="text-amber-700 hover:text-amber-500">Çorbalar</Link></li>
-              <li><Link to="/tarifler?category=tatli" className="text-amber-700 hover:text-amber-500">Tatlılar</Link></li>
-              <li><Link to="/tarifler?category=salata" className="text-amber-700 hover:text-amber-500">Salatalar</Link></li>
-            </ul>
-          </div>
+          <FooterSection title="Kategoriler">
+              <li><Link to="/tarifler?category=kahvalti" className={linkStyle}>Kahvaltı</Link></li>
+              <li><Link to="/tarifler?category=ana-yemek" className={linkStyle}>Ana Yemekler</Link></li>
+              <li><Link to="/tarifler?category=corba" className={linkStyle}>Çorbalar</Link></li>
+              <li><Link to="/tarifler?category=tatli" className={linkStyle}>Tatlılar</Link></li>
+              <li><Link to="/tarifler?category=salata" className={linkStyle}>Salatalar</Link></li>
+          </FooterSection>
 
           {/* İletişim */}
-          <div>
-            <h4 className="font-semibold text-amber-800 mb-4">İletişim</h4>
-            <ul className="space-y-2">
+          <FooterSection title="İletişim">
               <li className="text-amber-700">info@yemektarifleri.com</li>
               <li className="text-amber-700">+90 123 456 7890</li>
-            </ul>
-          </div>
+          </FooterSection>
         </div>
 
         <div className="text-center mt-8 text-amber-700 text-sm">
