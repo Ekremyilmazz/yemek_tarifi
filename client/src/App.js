@@ -27,7 +27,7 @@ function App() {
     }, 8000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [backgroundImages.length]);
 
   return (
     <>
