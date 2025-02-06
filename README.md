@@ -79,7 +79,12 @@ Lezzet Defteri, kullanıcıların yemek tarfilerini paylaşabildiğive keşfedeb
 ### Anasayfa
 ![Image](https://github.com/user-attachments/assets/26f04889-6bd1-4577-aee2-9cacb685771a)
 
-### Tarifler sayfası (filtreleme ve tarif detaylarını görüntüle?
-- filtreleme ![Image](https://github.com/user-attachments/assets/073cec80-0542-488c-b68e-fe86194362c2)
+### Tarifler sayfası (filtreleme, arama çubuğu ve tarif detaylarını görüntüle
+- filtreleme ![Image](https://github.com/user-attachments/assets/569f2058-ab94-493c-ac04-ae5166c9aa58)
+- arama çubuğu ![Image](https://github.com/user-attachments/assets/4c415367-efdf-4671-a648-7f82254e50b2)
 - tarif detyları ![image](https://github.com/user-attachments/assets/87c8a843-c55f-466c-82ec-d7e4ab997977)
+
+### Tarif ekleme formu
+- ![Image](https://github.com/user-attachments/assets/e4865d1b-fb6a-45ab-aa76-8d47979f0e0f)
+- ![Image](https://github.com/user-attachments/assets/ebf9459c-1b07-45e7-8ec9-3f21b230353c)
 
